@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="ArbolVisualMenuPrincipal" src="project://database/Assets/UI%20Toolkit/ArbolVisualMenuPrincipal.uxml?fileID=9197481963319205126&amp;guid=f44aa8eb073092f44b76685e0f3cfe38&amp;type=3#ArbolVisualMenuPrincipal" />
+    <engine:Template name="MenuOpciones" src="project://database/Assets/UI%20Toolkit/MenuOpciones.uxml?fileID=9197481963319205126&amp;guid=95a3f049544f0f543a864a9cd4355137&amp;type=3#MenuOpciones" />
+    <engine:Instance template="ArbolVisualMenuPrincipal" name="ArbolVisualMenuPrincipal" style="flex-grow: 1;" />
+    <engine:Instance template="MenuOpciones" name="MenuOpciones" style="flex-grow: 1; display: none;" />
+</engine:UXML>
