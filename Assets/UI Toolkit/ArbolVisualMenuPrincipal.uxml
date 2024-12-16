@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/EstiloMenuPrincipal.uss?fileID=7433441132597879392&amp;guid=3f84a88bcf31cbe4881c6a78d8305516&amp;type=3#EstiloMenuPrincipal" />
+    <engine:VisualElement name="MenuPrincipal" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/fondo.png?fileID=2800000&amp;guid=9d1a183681269fd489c31f88ab0ac7af&amp;type=3#fondo&quot;);">
+        <engine:Label text="ARKANET" name="Encabezado" class="header" style="font-size: 165px; bottom: -187px;" />
+        <engine:Button text="Iniciar" emoji-fallback-support="true" name="StartGameButton" class="button" style="bottom: -195px;" />
+        <engine:Button text="Opciones" name="SettingsButton" class="button" style="bottom: -199px;" />
+        <engine:Button text="Salir" name="ExitButton" class="button" style="bottom: -205px;" />
+    </engine:VisualElement>
+</engine:UXML>

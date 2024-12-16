@@ -1,0 +1,11 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/EstiloMenuPrincipal.uss?fileID=7433441132597879392&amp;guid=3f84a88bcf31cbe4881c6a78d8305516&amp;type=3#EstiloMenuPrincipal" />
+    <engine:VisualElement style="flex-grow: 1; -unity-background-image-tint-color: rgb(255, 255, 255); background-color: rgba(125, 125, 125, 0); background-image: url(&quot;project://database/Assets/fondo.png?fileID=2800000&amp;guid=9d1a183681269fd489c31f88ab0ac7af&amp;type=3#fondo&quot;);">
+        <engine:Label text="Opciones" name="Titulo" class="header" />
+        <engine:GroupBox style="background-color: rgba(88, 88, 121, 0); height: 865px; width: 940px; left: 1187px; bottom: -40px;">
+            <engine:Toggle label="Pantalla Completa&#x9;&#x9;&#x9;&#x9;" name="PantallaCompleta" class="label" style="-unity-text-align: middle-left; right: auto; width: 881px; left: 29px; bottom: -30px; position: relative; font-size: 50px; word-spacing: 0; -unity-paragraph-spacing: 0; align-content: center;" />
+            <engine:Slider label="Volumen &#x9;&#x9;" value="42" high-value="100" style="height: 85px; bottom: -90px; font-size: 50px; width: 872px; left: 29px; -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-align: middle-left; text-overflow: clip; justify-content: center;" />
+            <engine:Button text="Volver" name="BotonRegresar" class="button" style="top: 443px;" />
+        </engine:GroupBox>
+    </engine:VisualElement>
+</engine:UXML>
