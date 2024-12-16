@@ -15,7 +15,7 @@ namespace Platformer.Mechanics
         public AudioClip ouchAudio;
 
         public float maxSpeed = 7;
-        public float jumpTakeOffSpeed = 7;
+        public float jumpTakeOffSpeed = 5;
 
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
@@ -97,7 +97,7 @@ namespace Platformer.Mechanics
         {
             // Update grounded state animation only based on jump input and grounded status
             animator.SetBool("grounded", IsGrounded);
-            
+
             // Set horizontal movement animation
             animator.SetFloat("velocityX", Mathf.Abs(move.x));
 
