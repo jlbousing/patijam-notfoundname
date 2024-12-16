@@ -8,6 +8,7 @@ using Platformer.Core;
 
 namespace Platformer.Mechanics
 {
+    
     public class PlayerController : KinematicObject
     {
         public AudioClip jumpAudio;
@@ -31,6 +32,8 @@ namespace Platformer.Mechanics
         private readonly PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
         public Bounds Bounds => collider2d.bounds;
+
+        public ContadorPaginas pm;
 
         void Awake()
         {
@@ -134,5 +137,18 @@ namespace Platformer.Mechanics
             Jumping,
             InFlight
         }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Pagina"))
+            {
+                Destroy(other.gameObject);
+                pm.pageCount++;
+            }
+        }
     }
+
+    
+
+
 }
