@@ -25,7 +25,7 @@ public class EventosMenu
 
 
         //Cambia a escena de juego
-        _startButton.clicked += () => SceneManager.LoadScene(sceneName: "Nombre de la escena");
+        _startButton.clicked += () => SceneManager.LoadScene(sceneName: "First");
 
         //AddLogsToButtons();
     }
