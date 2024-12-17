@@ -13,7 +13,8 @@ public class DialogArea : MonoBehaviour
     {
         Debug.Log("entrando en trigger");
 
-        if (!isTextGenerated && col.gameObject.tag == "Player") {
+        if (!isTextGenerated && col.gameObject.tag == "Player")
+        {
             Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
             var textPosition = new Vector3(
                 col.gameObject.transform.position.x,
@@ -21,8 +22,6 @@ public class DialogArea : MonoBehaviour
                 -3f
             );
             var text = Instantiate(textDialog, textPosition, col.gameObject.transform.rotation);
-            Debug.Log("Generando text");
-            Debug.Log(text.transform.position);
             isTextGenerated = true;
         }
     }
