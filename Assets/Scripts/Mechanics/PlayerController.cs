@@ -138,15 +138,17 @@ namespace Platformer.Mechanics
             InFlight
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            /*
-            if (other.gameObject.CompareTag("Pagina"))
-            {
-                Destroy(other.gameObject);
-                pm.pageCount++;
-            } */
-        }
+
+
+        //Actualiza contador y borra gameobject de la página
+        //private void OnTriggerEnter2D(Collider2D other)
+        //{
+        //    if (other.gameObject.CompareTag("Pagina"))
+        //    {
+        //        Destroy(other.gameObject);
+        //        pm.pageCount++;
+        //    }
+        //}
     }
 
 
