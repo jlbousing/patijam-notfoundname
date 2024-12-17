@@ -10,20 +10,21 @@ public class Page : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            LoadSceneByIndex();
+            SceneManager.LoadScene(sceneName: escena);
+            //LoadSceneByIndex();
         }
     }
 
-    private void LoadSceneByIndex()
-    {
-        if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(sceneName: escena);
-        }
-        else
-        {
-            Debug.LogError($"El índice de la escena {sceneIndex} no es válido. Verifica Build Settings.");
-        }
-    }
+    //private void LoadSceneByIndex()
+    //{
+    //    if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
+    //    {
+    //        SceneManager.LoadScene(sceneName: escena);
+    //    }
+    //    else
+    //    {
+    //        Debug.LogError($"El índice de la escena {sceneIndex} no es válido. Verifica Build Settings.");
+    //    }
+    //}
 
 }
