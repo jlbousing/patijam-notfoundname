@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class VillainFollow : MonoBehaviour
 {
@@ -34,6 +35,13 @@ public class VillainFollow : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             Debug.Log("game over");
+            RestartCurrentScene();
         }
+    }
+
+    private void RestartCurrentScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
