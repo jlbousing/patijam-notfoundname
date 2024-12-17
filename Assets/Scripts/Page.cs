@@ -1,16 +1,29 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Page : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField]
+    private int sceneIndex = -1;
+    public string escena;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            LoadSceneByIndex();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void LoadSceneByIndex()
     {
-        
+        if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(sceneName: escena);
+        }
+        else
+        {
+            Debug.LogError($"El índice de la escena {sceneIndex} no es válido. Verifica Build Settings.");
+        }
     }
+
 }

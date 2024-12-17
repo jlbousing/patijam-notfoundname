@@ -8,7 +8,7 @@ using Platformer.Core;
 
 namespace Platformer.Mechanics
 {
-    
+
     public class PlayerController : KinematicObject
     {
         public AudioClip jumpAudio;
@@ -151,7 +151,7 @@ namespace Platformer.Mechanics
         //}
     }
 
-    
+
 
 
 }
