@@ -5,7 +5,7 @@ public class Page : MonoBehaviour
 {
     [SerializeField]
     private int sceneIndex = -1;
-
+    public string escena;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -18,7 +18,7 @@ public class Page : MonoBehaviour
     {
         if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(sceneIndex);
+            SceneManager.LoadScene(sceneName: escena);
         }
         else
         {

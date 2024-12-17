@@ -63319,6 +63319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7267761747538149141, guid: f3a0f296263e3a359b38b7fdb729c778,
         type: 3}
+      propertyPath: escena
+      value: Second
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267761747538149141, guid: f3a0f296263e3a359b38b7fdb729c778,
+        type: 3}
       propertyPath: sceneIndex
       value: 2
       objectReference: {fileID: 0}
