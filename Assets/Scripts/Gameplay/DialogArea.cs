@@ -11,8 +11,6 @@ public class DialogArea : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("entrando en trigger");
-
         if (!isTextGenerated && col.gameObject.tag == "Player")
         {
             Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
